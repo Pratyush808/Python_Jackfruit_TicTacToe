@@ -168,7 +168,7 @@ class TicTacToe(wx.Frame):
     def make_move(self, index, symbol):
         self.board[index] = symbol
         self.buttons[index].SetLabel(symbol)
-
+#gives synchronised updates about game state and ui state
     def computer_move(self):
         if self.check_winner() or "" not in self.board:
             return
