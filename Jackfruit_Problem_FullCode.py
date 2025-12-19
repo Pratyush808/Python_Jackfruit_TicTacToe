@@ -138,7 +138,7 @@ class TicTacToe(wx.Frame):
         return btn
 
     def make_handler(self, index):
-        def handler(event):
+        def handler(event):    # remembers which button was clicked
             self.handle_move(index)
         return handler
 
